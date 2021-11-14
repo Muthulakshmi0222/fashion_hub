@@ -1,3 +1,5 @@
+//this file is to give the product list into the cart
+
 const data = {
     products: [
       {

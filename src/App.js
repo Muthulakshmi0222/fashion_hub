@@ -18,6 +18,8 @@ function App() {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
   };
+
+  //the product is remove from the cart the code is given below
   const onRemove = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist.qty === 1) {
@@ -30,6 +32,7 @@ function App() {
       );
     }
   };
+  //removal of want this is name ,image , price
   return (
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
